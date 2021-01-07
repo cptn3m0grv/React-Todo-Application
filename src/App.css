@@ -1,38 +1,89 @@
-.App {
+.root-container{
+  margin: 0;
+  height: 100vh;
+  width: 100vw;
+  background: linear-gradient(147deg, #7be495, #56c595);
+  position: relative;
+}
+
+.list-container{
+  height: 30rem;
+  width: 25rem;
+  padding: .8rem;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  box-shadow: 4px 3px 8px 1px #969696;
+  border-radius: .3rem;
   text-align: center;
+  overflow-x: hidden;
+  overflow-y: auto;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.inputBox{
+  padding-left: 0.5rem;
+  font-size: 1.2rem;
+  margin: 0.7rem;
+  width: 18rem;
+  height: 2rem;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.btn {
+  background: #3498db;
+  background-image: linear-gradient(to bottom, #3498db, #2980b9);
+  border-radius: 0.7rem;  
+  box-shadow: 2px 3px 9px #666666;
+  font-family: Courier New;
+  color: #ffffff;
+  font-size: 1.4rem;
+  padding: 0.5rem;
+  text-decoration: none;
+  width: 9rem;
+} 
+
+.btn:hover {
+  background: #3cb0fd;
+  background-image: linear-gradient(to bottom, #3cb0fd, #3498db);
+  text-decoration: none;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+ul{
+  text-align: left;
+}
+
+li{
+  font-size: 1.5rem;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  justify-content: space-between;
+  border: 1px solid black;
+  margin: 10px;
+  border-radius: 5px;
+  padding: 5px;
 }
 
-.App-link {
-  color: #61dafb;
+.trashButton{
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-left: 5px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.checkButton{
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.twoButtons{
+  padding: 5px;
+}
+
+.todo-item{
+  color: black;
+}
+
+.completed-item{
+  background-color: red;
+  text-decoration: line-through;
+  opacity: 0.5;
 }
